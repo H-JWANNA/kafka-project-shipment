@@ -1,0 +1,18 @@
+spring:
+  # Active the web console and pin DB name
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  datasource:
+    generate-unique-name: false
+
+  # Show log of JPA query
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8090
